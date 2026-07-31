@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>HSA Calculator 2024 — Health Savings Account Growth Estimator | Tabutility</title>
+<meta name="description" content="Calculate how much your HSA will grow tax-free. Model annual contributions, employer contributions, investment returns, and medical expenses to see your long-term balance."/>
+<link rel="canonical" href="https://hsa-calculator.tabutility.com/"/>
+<meta property="og:title" content="HSA Calculator 2024 — Health Savings Account Growth Estimator"/>
+<meta property="og:description" content="See how your HSA grows tax-free over time. Model contributions, employer match, returns, and medical expenses."/>
+<meta property="og:url" content="https://hsa-calculator.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"HSA Calculator 2024","url":"https://hsa-calculator.tabutility.com/","description":"Free HSA calculator. Model your Health Savings Account balance growth with contributions, employer match, and investment returns.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"creator":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"HSA Calculator","item":"https://hsa-calculator.tabutility.com/"}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #334155}
+nav a{color:#a5b4fc;text-decoration:none;font-size:14px;font-weight:600}
+.container{max-width:700px;margin:0 auto;padding:24px 16px}
+h1{font-size:clamp(20px,4vw,30px);font-weight:800;margin-bottom:8px}
+.subtitle{color:#94a3b8;font-size:15px;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:22px;margin-bottom:18px}
+.card h2{font-size:15px;font-weight:700;color:#a5b4fc;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field label{display:block;font-size:11px;color:#94a3b8;margin-bottom:4px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.field input,.field select{width:100%;background:#0f172a;border:1px solid #475569;border-radius:8px;padding:10px 12px;color:#f1f5f9;font-size:15px;outline:none}
+.field input:focus,.field select:focus{border-color:#6366f1}
+.btn{width:100%;background:#6366f1;color:#fff;border:none;border-radius:10px;padding:13px;font-size:16px;font-weight:700;cursor:pointer;margin-top:6px}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.result-box{background:#0f172a;border-radius:10px;padding:16px;text-align:center}
+.result-box .val{font-size:24px;font-weight:800;color:#34d399;margin-bottom:4px}
+.result-box .lbl{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
+.tax-save{background:#064e3b;border:1px solid #0e4d3a;border-radius:10px;padding:14px;text-align:center;font-size:14px;color:#34d399;margin-top:4px}
+.limit-box{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px;font-size:13px;color:#94a3b8;margin-top:14px}
+.limit-box strong{color:#f1f5f9}
+.adslot{min-height:90px;background:#1e293b;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#475569;font-size:12px;margin:20px 0}
+.faq-item{border-bottom:1px solid #334155;padding:14px 0}
+.faq-item summary{cursor:pointer;font-weight:600;color:#e2e8f0;list-style:none;font-size:14px}
+.faq-item p{color:#94a3b8;font-size:13px;margin-top:8px;line-height:1.6}
+footer{text-align:center;padding:32px 16px;color:#475569;font-size:12px;border-top:1px solid #1e293b;margin-top:32px}
+@media(max-width:500px){.grid,.result-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><a href="https://tabutility.com">← All Tools</a><span style="color:#64748b;font-size:12px">Free · No sign-up</span></nav>
+<div class="container">
+  <h1>🏥 HSA Calculator 2024</h1>
+  <p class="subtitle">Model your Health Savings Account balance over time — including tax savings, employer contributions, and investment growth.</p>
+  <div class="adslot"><ins class="adsbygoogle" style="display:block;width:100%;height:90px" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="horizontal"></ins></div>
+  <div class="card">
+    <h2>Your HSA Details</h2>
+    <div class="grid">
+      <div class="field"><label>Coverage Type</label><select id="coverage"><option value="self">Self-Only (limit: $4,150)</option><option value="family">Family (limit: $8,300)</option></select></div>
+      <div class="field"><label>Your Annual Contribution ($)</label><input type="number" id="contrib" value="3000" min="0"/></div>
+      <div class="field"><label>Employer Contribution ($)</label><input type="number" id="employer" value="500" min="0"/></div>
+      <div class="field"><label>Current HSA Balance ($)</label><input type="number" id="balance" value="0" min="0"/></div>
+      <div class="field"><label>Annual Medical Expenses ($)</label><input type="number" id="medical" value="1500" min="0"/></div>
+      <div class="field"><label>Investment Return (%)</label><input type="number" id="return" value="7" min="0" max="20" step="0.5"/></div>
+      <div class="field"><label>Years to Model</label><input type="number" id="years" value="20" min="1" max="50"/></div>
+      <div class="field"><label>Your Tax Rate (%)</label><input type="number" id="taxrate" value="24" min="0" max="50" step="1"/></div>
+    </div>
+    <button class="btn" onclick="calc()">Calculate HSA Growth</button>
+  </div>
+  <div class="card" id="results" style="display:none">
+    <h2>Your HSA Projection</h2>
+    <div class="result-grid">
+      <div class="result-box"><div class="val" id="r-balance">—</div><div class="lbl">Balance in <span id="r-years">20</span> yrs</div></div>
+      <div class="result-box"><div class="val" id="r-total-contrib">—</div><div class="lbl">Total Contributed</div></div>
+      <div class="result-box"><div class="val" id="r-growth">—</div><div class="lbl">Investment Growth</div></div>
+      <div class="result-box"><div class="val" id="r-tax-save">—</div><div class="lbl">Annual Tax Saved</div></div>
+    </div>
+    <div class="tax-save" id="tax-save-msg"></div>
+    <div class="limit-box">
+      <strong>2024 Contribution Limits:</strong> Self-only HDHP: $4,150 · Family HDHP: $8,300 · Catch-up (55+): additional $1,000 · Employer contributions count toward the limit.
+    </div>
+  </div>
+  <div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=personal+finance+health+savings+books&tag=tabutility-20','_blank','noopener noreferrer')">
+    <span style="font-size:28px;flex-shrink:0">📚</span>
+    <div><div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Master your healthcare finances</div><div style="font-size:12px;color:#94a3b8">Browse personal finance books <span style="color:#f59e0b">→ Browse on Amazon</span></div><div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div></div>
+  </div>
+  <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:32px">
+    <a href="https://us-paycheck-calculator.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">US Paycheck Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    <a href="https://us-401k.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">401(k) Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    <a href="https://retirement-calculator.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">FIRE / Retirement Calc</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+    <a href="https://savings-goal-calculator.tabutility.com/" style="display:block;background:#1e293b;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Savings Goal Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+  </div>
+  <div class="card">
+    <h2>Frequently Asked Questions</h2>
+    <details class="faq-item"><summary>What is an HSA and who is eligible?</summary><p>A Health Savings Account (HSA) lets you save pre-tax money for qualified medical expenses. To be eligible, you must be enrolled in a High-Deductible Health Plan (HDHP) — in 2024, that means a deductible of at least $1,600 (self-only) or $3,200 (family). You cannot be enrolled in Medicare or claimed as a dependent.</p></details>
+    <details class="faq-item"><summary>What are the triple tax benefits of an HSA?</summary><p>HSAs offer three tax advantages: (1) Contributions are pre-tax or tax-deductible, reducing your taxable income. (2) Investment growth is tax-free. (3) Withdrawals for qualified medical expenses are tax-free. No other account type offers all three simultaneously.</p></details>
+    <details class="faq-item"><summary>Can I invest my HSA funds?</summary><p>Yes — most HSA providers allow you to invest your balance once it exceeds a threshold (typically $1,000–$2,000). Many financial advisors recommend a "pay out of pocket now, invest and grow, reimburse yourself later" strategy to maximise investment time.</p></details>
+    <details class="faq-item"><summary>What happens to unused HSA funds?</summary><p>Unlike FSAs, HSA funds roll over indefinitely — there is no use-it-or-lose-it rule. After age 65, you can withdraw for any reason (like a traditional IRA), but non-medical withdrawals are taxed as ordinary income.</p></details>
+    <details class="faq-item"><summary>What qualifies as an HSA medical expense?</summary><p>Qualified expenses include deductibles, copays, prescriptions, dental, vision, mental health care, and many more. See IRS Publication 502 for the full list. Non-qualified withdrawals before age 65 incur a 20% penalty plus income tax.</p></details>
+  </div>
+</div>
+<footer>© 2024 Tabutility · For informational use only · <a href="https://tabutility.com" style="color:#6366f1">All Tools</a></footer>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an HSA and who is eligible?","acceptedAnswer":{"@type":"Answer","text":"An HSA lets you save pre-tax money for medical expenses. You must be enrolled in a High-Deductible Health Plan (HDHP) and not enrolled in Medicare."}},{"@type":"Question","name":"What are the triple tax benefits of an HSA?","acceptedAnswer":{"@type":"Answer","text":"1) Contributions are pre-tax/deductible. 2) Investment growth is tax-free. 3) Withdrawals for medical expenses are tax-free."}},{"@type":"Question","name":"Can I invest my HSA funds?","acceptedAnswer":{"@type":"Answer","text":"Yes — most HSA providers allow investment once balance exceeds a threshold. Growth is tax-free."}},{"@type":"Question","name":"What happens to unused HSA funds?","acceptedAnswer":{"@type":"Answer","text":"HSA funds roll over indefinitely — no use-it-or-lose-it rule. After 65, withdrawals for any reason are taxed as ordinary income."}},{"@type":"Question","name":"What qualifies as an HSA medical expense?","acceptedAnswer":{"@type":"Answer","text":"Deductibles, copays, prescriptions, dental, vision, mental health, and more. See IRS Publication 502."}}]}</script>
+<script>
+function fmt(n){return '$'+Math.round(n).toLocaleString();}
+function calc(){
+  const contrib=parseFloat(document.getElementById('contrib').value)||0;
+  const employer=parseFloat(document.getElementById('employer').value)||0;
+  const balance0=parseFloat(document.getElementById('balance').value)||0;
+  const medical=parseFloat(document.getElementById('medical').value)||0;
+  const ret=parseFloat(document.getElementById('return').value)/100||0.07;
+  const years=parseInt(document.getElementById('years').value)||20;
+  const taxRate=parseFloat(document.getElementById('taxrate').value)/100||0.24;
+  const totalAnnual=contrib+employer;
+  let bal=balance0,totalContrib=0,totalMedical=0;
+  for(let i=0;i<years;i++){bal=(bal+totalAnnual)*( 1+ret)-medical;if(bal<0)bal=0;totalContrib+=totalAnnual;totalMedical+=medical;}
+  const growth=bal-totalContrib-balance0+totalMedical;
+  const annualTaxSave=contrib*taxRate;
+  document.getElementById('r-balance').textContent=fmt(bal);
+  document.getElementById('r-total-contrib').textContent=fmt(totalContrib);
+  document.getElementById('r-growth').textContent=fmt(Math.max(0,growth));
+  document.getElementById('r-tax-save').textContent=fmt(annualTaxSave);
+  document.getElementById('r-years').textContent=years;
+  document.getElementById('tax-save-msg').textContent=`💰 Contributing $${contrib.toLocaleString()}/yr saves you approx. ${fmt(annualTaxSave)} in federal tax this year — and ${fmt(annualTaxSave*years)} over ${years} years`;
+  document.getElementById('results').style.display='block';
+}
+</script>
+</body>
+</html>
